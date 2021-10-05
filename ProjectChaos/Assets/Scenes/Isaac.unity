@@ -515,7 +515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311737330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -16.53}
+  m_LocalPosition: {x: -2.52, y: -1.76, z: -5.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 301030346}
@@ -533,9 +533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27b4807f22747f489fd8e40a95e0b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troop1: {fileID: 3280888963636930866, guid: c753cf943a7d51043a4d0210e6863494, type: 3}
-  time0: 2
-  time2: 2
+  troop1: {fileID: 1021747623335957281, guid: d0b8abe888cfe364daad3a5f5fb88d92, type: 3}
+  time0: 5
 --- !u!1 &1772509909
 GameObject:
   m_ObjectHideFlags: 0

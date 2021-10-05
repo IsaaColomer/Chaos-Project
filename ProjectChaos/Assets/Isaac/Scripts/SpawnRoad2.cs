@@ -7,6 +7,7 @@ public class SpawnRoad2 : MonoBehaviour
     public GameObject troop1;
     public float time0;
     private float time2;
+    public Vector3 traslate;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class SpawnRoad2 : MonoBehaviour
         if(time0<0.0f)
         {
             time0 = time2;
-            Instantiate(troop1, transform.position, Quaternion.identity);
+            Instantiate(troop1, transform.position + traslate, Quaternion.identity);
         }
     }
 }

@@ -20,11 +20,11 @@ public class BaseMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < BuildingsManager.instance.buildings.Length; i++)
+        for(int i = 0; i < BuildingsManager.instance.buildingsRoad1.Length; i++)
         {
-            if(BuildingsManager.instance.buildings[i] != null)
+            if(BuildingsManager.instance.buildingsRoad1[i] != null)
             {
-                agent.destination = BuildingsManager.instance.buildings[i].transform.position;
+                agent.destination = BuildingsManager.instance.buildingsRoad1[i].transform.position;
             }
         }
     }

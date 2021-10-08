@@ -958,7 +958,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   troop1: {fileID: 3280888963636930866, guid: c753cf943a7d51043a4d0210e6863494, type: 3}
   time0: 1
-  traslate: {x: 0, y: 0, z: 0}
 --- !u!1 &998488741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   troop1: {fileID: 3280888963636930866, guid: c753cf943a7d51043a4d0210e6863494, type: 3}
   time0: 1
-  traslate: {x: 0, y: 0, z: 0}
 --- !u!1 &1425633182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1840,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932192336}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1949846062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1949846064}
+  - component: {fileID: 1949846063}
+  m_Layer: 0
+  m_Name: TroopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1949846063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949846062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5306f33782a51054caa77545873875df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawner1: {fileID: 841825745}
+  Spawner2: {fileID: 1311737330}
+  Spawner3: {fileID: 1977322634}
+--- !u!4 &1949846064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949846062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977322634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,7 +1911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977322634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.34, y: 0, z: -21.5}
+  m_LocalPosition: {x: 5.1, y: 0, z: -21.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 301030346}
@@ -1887,4 +1931,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   troop1: {fileID: 3280888963636930866, guid: c753cf943a7d51043a4d0210e6863494, type: 3}
   time0: 1
-  traslate: {x: 0, y: 0, z: 0}

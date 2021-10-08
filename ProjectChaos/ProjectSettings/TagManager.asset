@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Base1Road2
+  - 2
+  - Cum
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - t
   - Water
   - UI
   - 

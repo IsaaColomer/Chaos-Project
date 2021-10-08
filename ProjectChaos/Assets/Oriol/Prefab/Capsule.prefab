@@ -164,6 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Manager: {fileID: 0}
-  health: 200
+  health: 5
   speed: 5
-  type: 0
+  type: 1

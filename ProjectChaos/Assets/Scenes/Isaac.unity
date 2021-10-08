@@ -956,7 +956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27b4807f22747f489fd8e40a95e0b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troop1: {fileID: 3280888963636930866, guid: c753cf943a7d51043a4d0210e6863494, type: 3}
+  troop1: {fileID: 4845313555228959812, guid: c4d2c53031a74e64c9da0fe6d994abd6, type: 3}
   time0: 1
 --- !u!1 &998488741
 GameObject:

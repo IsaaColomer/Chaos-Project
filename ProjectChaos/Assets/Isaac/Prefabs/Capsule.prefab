@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -3020972714469484594}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Troop1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38058fdd4641ca84d9e65ee9292a1e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goTo: 1
 --- !u!114 &6671161053423045518
 MonoBehaviour:
   m_ObjectHideFlags: 0

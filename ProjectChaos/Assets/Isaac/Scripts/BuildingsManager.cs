@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeleteMe : MonoBehaviour
+public class BuildingsManager : MonoBehaviour
 {
-    public static DeleteMe instance;
+    public static BuildingsManager instance;
+    public GameObject[] buildings;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,13 +15,6 @@ public class DeleteMe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Troop1")
-        {
-            Destroy(this.gameObject);
-        }
+        
     }
 }

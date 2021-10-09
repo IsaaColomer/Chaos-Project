@@ -37,6 +37,10 @@ public class Troop : MonoBehaviour
         {
             agent.destination = BuildingsManager.instance.buildingsRoad3.gameObject.transform.GetChild(0).transform.position;
         }
+        else if(type == 4)
+        {
+            agent.destination = BuildingsManager.instance.buildingsRoad4.gameObject.transform.GetChild(0).transform.position;
+        }
         //Health
         health -= Time.deltaTime;
         if (health <= 0) Die();

@@ -10,6 +10,7 @@ public class TroopManager : MonoBehaviour
     public GameObject troop1;
     public float time0;
     private float time2;
+    public Transform acum;
  
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class TroopManager : MonoBehaviour
         {
             time0 = time2;
             troop1.GetComponent<Troop>().type = type;
-            Instantiate(troop1, transform.position, Quaternion.identity);
+            Instantiate(troop1, transform.position, Quaternion.identity,acum);
         }
     }
 }

@@ -16,14 +16,12 @@ public class TroopManager : MonoBehaviour
     {
         time2 = time0;
         instance = this;
-        this.GetComponent<Toop>().Manager = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        CountDown();
-        
+        CountDown();        
     }
     
     void CountDown()
@@ -32,7 +30,7 @@ public class TroopManager : MonoBehaviour
         if(time0<0.0f)
         {
             time0 = time2;
-            troop1.GetComponent<Toop>().type = type;
+            troop1.GetComponent<Troop>().type = type;
             Instantiate(troop1, transform.position, Quaternion.identity);
         }
     }

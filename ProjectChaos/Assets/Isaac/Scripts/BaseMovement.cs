@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEditor.AI;
 
 public class BaseMovement : MonoBehaviour
 {
@@ -21,25 +20,30 @@ public class BaseMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(type == 1)
-        {
-            for(int i = 0; i < BuildingsManager.instance.buildingsRoad1.Length; i++)
-            {
-                if(BuildingsManager.instance.buildingsRoad1[i] != null)
-                {
-                    agent.destination = BuildingsManager.instance.buildingsRoad1[i].transform.position;
-                }
-            }
-        }
-        else if(type == 2)
-        {
-            for(int i = 0; i < BuildingsManager.instance.buildingsRoad2.Length; i++)
-            {
-                if(BuildingsManager.instance.buildingsRoad2[i] != null)
-                {
-                    agent.destination = BuildingsManager.instance.buildingsRoad2[i].transform.position;
-                }
-            }
-        }
+        //    if(type == 1)
+        //    {
+
+        //    }
+        //    else if(type == 2)
+        //    {
+        //        for(int i = 0; i < BuildingsManager.instance.buildingsRoad2.Length; i++)
+        //        {
+        //            if(BuildingsManager.instance.buildingsRoad2[i] != null)
+        //            {
+        //                agent.destination = BuildingsManager.instance.buildingsRoad2[i].transform.position;
+        //            }
+        //        }
+        //    }
+        //    else if (type == 3)
+        //    {
+        //        for (int i = 0; i < BuildingsManager.instance.buildingsRoad3.Length; i++)
+        //        {
+        //            if (BuildingsManager.instance.buildingsRoad3[i] != null)
+        //            {
+        //                agent.destination = BuildingsManager.instance.buildingsRoad3[i].transform.position;
+        //            }
+        //        }
+        //    }
+        //}
     }
 }

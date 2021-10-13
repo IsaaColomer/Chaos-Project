@@ -8,17 +8,21 @@ TagManager:
   - 2
   - Cum
   - Troop1
+  - EnemyBase1
+  - EnemyBase2
+  - EnemyBase3
+  - EnemyBase4
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - SpawnerBase1
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
+  - SpawnerBase2
+  - SpawnerBase3
+  - SpawnerBase4
   - 
   - 
   - 

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1111387502691378996}
   - component: {fileID: 4730187284173044461}
   - component: {fileID: 868039369034668528}
+  - component: {fileID: 4851427898739221909}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Troop1
@@ -166,3 +167,16 @@ MonoBehaviour:
   health: 500
   speed: 5
   type: 1
+--- !u!65 &4851427898739221909
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196886695884751889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 0.1125, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -24,31 +24,40 @@ public class Troop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        switch(type)
+        {
+            case 1:
+                agent.destination = BuildingsManager.instance.buildingsRoad1.gameObject.transform.GetChild(0).transform.position;
+                break;
+            case 2:
+                agent.destination = BuildingsManager.instance.buildingsRoad2.gameObject.transform.GetChild(0).transform.position;
+                break;
+            case 3:
+                agent.destination = BuildingsManager.instance.buildingsRoad3.gameObject.transform.GetChild(0).transform.position;
+                break;
+            case 4:
+                agent.destination = BuildingsManager.instance.buildingsRoad4.gameObject.transform.GetChild(0).transform.position;
+                break;
+        }
         //Movement
-        if(type == 1)
-        {
-            agent.destination = BuildingsManager.instance.buildingsRoad1.gameObject.transform.GetChild(0).transform.position;
-        }
-        else if(type == 2)
-        {
-            agent.destination = BuildingsManager.instance.buildingsRoad2.gameObject.transform.GetChild(0).transform.position;
-        }
-        else if(type == 3)
-        {
-            agent.destination = BuildingsManager.instance.buildingsRoad3.gameObject.transform.GetChild(0).transform.position;
-        }
-        else if(type == 4)
-        {
-            agent.destination = BuildingsManager.instance.buildingsRoad4.gameObject.transform.GetChild(0).transform.position;
-        }
+        
         //Health
-        health -= Time.deltaTime;
+        //health -= Time.deltaTime;
         if (health <= 0) Die();
         
     }
     void Die()
     {
         Destroy(this.gameObject);
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag != this.gameObject.tag)
+        {
+            //FIGHT!!
+            agent.destination = other.transform.position;
+        }
+        
     }
 
 }

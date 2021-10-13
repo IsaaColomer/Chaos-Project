@@ -30,9 +30,27 @@ public class TroopManager : MonoBehaviour
         time0 -= Time.deltaTime;
         if(time0<0.0f)
         {
-            time0 = time2;
             troop1.GetComponent<Troop>().type = type;
-            Instantiate(troop1, transform.position, Quaternion.identity,acum);
+            GameObject go = Instantiate(troop1, transform.position, Quaternion.identity, acum);
+
+            if (this.gameObject.layer == LayerMask.NameToLayer("SpawnerBase1"))
+            {
+                go.gameObject.tag = "EnemyBase1";
+            }
+            else if(this.gameObject.layer == LayerMask.NameToLayer("SpawnerBase2"))
+            {
+                go.gameObject.tag = "EnemyBase2";
+            }
+            else if (this.gameObject.layer == LayerMask.NameToLayer("SpawnerBase3"))
+            {
+                go.gameObject.tag = "EnemyBase3";
+            }
+            else if (this.gameObject.layer == LayerMask.NameToLayer("SpawnerBase4"))
+            {
+                go.gameObject.tag = "EnemyBase4";
+            }
+
+            time0 = time2;
         }
     }
 }

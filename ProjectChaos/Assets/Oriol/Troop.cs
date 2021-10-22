@@ -11,6 +11,8 @@ public class Troop : MonoBehaviour
     public float health;
     public float speed;
     public int type;
+    TimeHandle times;
+    public bool walk;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +21,13 @@ public class Troop : MonoBehaviour
         //instance = this;
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
+        walk = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         switch(type)
         {
             case 1:
@@ -39,6 +43,7 @@ public class Troop : MonoBehaviour
                 agent.destination = BuildingsManager.instance.buildingsRoad4.gameObject.transform.GetChild(0).transform.position;
                 break;
         }
+    
         //Movement
         
         //Health
@@ -55,9 +60,21 @@ public class Troop : MonoBehaviour
         if(other.tag != this.gameObject.tag)
         {
             //FIGHT!!
-            agent.destination = other.transform.position;
+            rb.velocity = Vector3.zero;
+            agent.velocity = Vector3.zero;
+            
+
+            Attack(other.gameObject);
+
+            
         }
         
+    }
+    private void Attack(GameObject enemy)
+    {
+        if(T)
+        enemy.GetComponent<Troop>().health -= 1;
+
     }
 
 }

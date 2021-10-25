@@ -72,7 +72,7 @@ public class Troop : MonoBehaviour
     }
     private void Attack(GameObject enemy)
     {
-        if(T)
+        //if(T)
         enemy.GetComponent<Troop>().health -= 1;
 
     }
